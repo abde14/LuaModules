@@ -2,7 +2,7 @@ local Stack = {}
 Stack.__index = Stack
 
 function Stack.new(baseArray)
-	local self = setmetatable({}, Stack)
+	local self = setmetatable(baseArray or {}, Stack)
 
 	return self
 end
